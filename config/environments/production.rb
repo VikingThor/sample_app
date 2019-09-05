@@ -99,7 +99,7 @@ Rails.application.configure do
     :port           => '587',
     :authentication => :plain,
     user_name: Rails.application.secrets.email_provider_username,
-    password: Rails.application.secrets.email_provider_password
+    password: Rails.application.secrets.email_provider_password,
     domain: Rails.application.secrets.domain_name,
     :enable_starttls_auto => true
   }
